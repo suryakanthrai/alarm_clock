@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Linking the CSS Style Sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <meta name="Alarm Clock" content="Alarm Clock Using HTML,CSS,Vanilla JS" />
+  </head>
+  <body>
+    <!-- main container for holding the heading and card layout -->
+    <div class="container">
+      <h1 class="heading">Alarm Clock</h1>
+      <!-- Card which hold the clock elements with respective elments   -->
+      <div class="card">
+        <img src="Assets/alarm-clock-icon.png" class="clock-style" />
+        <div class="current-time-style" id="current-time"></div>
+        <div class="dropdown-container">
+          <form>
+            <select name="hour" id="hourDropDown"></select>
+            <select name="minutes" id="minuteDropDown"></select>
+            <select name="seconds" id="secondsDropDown"></select>
+            <select name="AmorPm" id="AmorPmDropDown">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </form>
+          <!-- set Alarm button container which the setAlarm button will be located  -->
+          <div>
+            <button type="submit" class="button-style" id="setAlarm">
+              Set Alarm
+            </button>
+          </div>
+        </div>
+        <div class="set-alarm-container">
+          <h2>ALARMS</h1>
+        </div>
+        <!-- the alarms which are set those holds in this container  -->
+        <div id = "alarm-container"></div>
+      </div>
+    </div>
+    <!-- Linking the respective javascript file with the HTML -->
+    <script src="clock.js"></script>
+  </body>
+</html>
