@@ -10,6 +10,8 @@ body {
     background-attachment: fixed;
 }
 
+
+/* card layout containing the elements in it  */
 .card {
     /* min-width: 400px; */
     /* min-height: 350px; */
@@ -106,7 +108,7 @@ select{
 
 }
 
-
+/* making the website responsive used media queries for it  */
 @media screen and (max-width:576px){
     .card{
         width:250px;
